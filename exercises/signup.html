@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           *{
+            font-family: arial;
+           }
+           /* SIGN UP FORM */
+           .box{
+            display: inline-block;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: 2px 2px 2px grey;
+           }
+            .first,.last{
+                padding-left: 10px;
+                border: 1px solid rgba(139, 137, 137, 0.514);
+                border-radius: 10px;
+                display: inline-block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100px;
+                margin-bottom: 10px;
+               
+            }
+           
+            .email{
+                padding-left: 10px;
+                border-radius: 10px;
+                border: 1px solid rgba(139, 137, 137, 0.514);
+                margin-bottom: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 224px;
+                display: block;
+            }
+            #sign-up{
+                border-radius: 10px;
+                border: none;
+                color: white;
+                background-color: #377bff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 232px;
+                font-weight: bold;
+                font-size: 15px;
+                transition: color 0.15s;
+                transition: background-color 0.15s;
+                cursor: pointer;
+            }
+            #sign-up:hover{
+                background-color: #ffffff;
+                color: #377bff;
+               
+            }
+           /* END */
+
+           /* UBER REQUEST-A-RIDE-FORM */
+           .uber{
+            vertical-align: top;
+            padding: 5px 15px 15px 15px;
+            margin-left: 50px;
+            display: inline-block;
+            box-shadow: 5px 5px 5px grey;
+           }
+           .header{
+            font-weight: bold;
+            color: black;
+            font-size: large;
+           }
+
+           .location{
+            font-weight: bold;
+            outline: none;
+            border: none;
+            margin-bottom: 30px;
+            display: block;
+           }
+           .destination{
+            font-weight: bold;
+            margin-bottom: 30px;
+            outline: none;
+            border: none;
+            display: block;
+           }
+           #btn{
+            font-weight: bold;
+            padding: 10px 10px 10px 10px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            border: none;
+            transition:background-color .15s ;
+            transition:color .15s ;
+           }
+           #btn:hover{
+            background-color: white;
+            color: black;
+           }
+           #btn2{
+            font-weight: bold;
+            padding: 10px 10px 10px 10px;
+            background-color: transparent;
+            color: black;
+            border: none;
+           }
+           #btn2:hover{
+            background-color: black;
+            color: white;
+           }
+           input[type="text"]::placeholder {  
+                  
+                  /* Firefox, Chrome, Opera */ 
+                  padding-left: 10px; 
+              } 
+/* end */
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <input class="first" type="text" placeholder="First Name">
+            <input class="last" type="text" placeholder="Last Name">
+            <input class="email" type="text" placeholder="Email">
+            <button id="sign-up"> Sign Up</button>
+        </div>
+
+        <div class="uber">
+            <p class="header">Request a ride now </p>
+            <input class="location" type="text" placeholder="Enter pickup location">
+            <input class="destination" type="text" placeholder="Enter destination">
+            <button id="btn">Request now</button>
+            <button id="btn2">Schedule for Later</button>
+        </div>
+
+
+
+
+    </body>
+</html>
